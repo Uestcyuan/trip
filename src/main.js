@@ -1,9 +1,16 @@
+// 入口文件
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import './assets/styles/reset.css'
+// 移动端1px问题：在高倍屏中1px被显示成多px
+import './assets/styles/border.css'
+// 300ms问题：某些机型某些浏览器触发click事件会延迟300ms，npm install fastclick --save,引入，绑定在body
+import fastClick from 'fastclick'
 
 Vue.config.productionTip = false
+fastClick.attach(document.body)
 
 new Vue({
   router,
