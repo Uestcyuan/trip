@@ -8,9 +8,12 @@ import './assets/styles/reset.css'
 import './assets/styles/border.css'
 // 300ms问题：某些机型某些浏览器触发click事件会延迟300ms，npm install fastclick --save,引入，绑定在body
 import fastClick from 'fastclick'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 new Vue({
   router,
