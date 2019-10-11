@@ -94,33 +94,35 @@ export default {
   .icons >>> .swiper-container
     height 0
     padding-bottom 50% //屏幕宽度的50%
-  .icon
-    width 25% //父级icons宽度的25%
-    height 0
-    padding-bottom 25% //父级宽度的25%
-    float left
-    overflow hidden
-    position relative //相对定位，相对于其正常位置进行定位
-    .icon-img
-      position absolute //绝对定位，相对于 static 定位以外的第一个父元素进行定位
-      top 0
-      left 0
-      right 0
-      bottom 22px
-      box-sizing border-box
-      padding 5px
-      .icon-img-content
-        height 100%
-        display block
-        margin 0 auto //这三行让图片居中
-    .icon-desc
-      position absolute //绝对定位，相对于 static 定位以外的第一个父元素进行定位
-      left 0
-      right 0
-      bottom 0
-      height 22px
-      line-height 22px //这两行让文字上下居中
-      text-align center
-      color #333
-      ellipsis()//这三行让多余的字以点点点显示
+  .icons
+    margin-top .1rem
+    .icon
+      width 25% //父级icons宽度的25%
+      height 0
+      padding-bottom 25% //父级宽度的25%
+      float left
+      overflow hidden
+      position relative //相对定位，相对于其正常位置进行定位
+      .icon-img
+        position absolute //绝对定位，相对于 static 定位以外的第一个父元素进行定位
+        top 0
+        left 0
+        right 0
+        bottom 22px
+        box-sizing border-box
+        padding 5px
+        .icon-img-content
+          height 100%
+          display block
+          margin 0 auto //这三行让图片居中
+      .icon-desc
+        position absolute //绝对定位，相对于 static 定位以外的第一个父元素进行定位
+        left 0
+        right 0
+        bottom 0
+        height 22px
+        line-height 22px //这两行让文字上下居中
+        text-align center
+        color #333
+        ellipsis()//这三行让多余的字以点点点显示
 </style>

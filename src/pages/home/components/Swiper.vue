@@ -1,15 +1,25 @@
 <template>
   <div class="wrapper">
     <swiper :options="swiperOption">
-      <swiper-slide v-for="item of swiperList" :key="item.id">
-        <img class="img" :src="item.imgUrl" />
-　　　</swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
+      <swiper-slide
+        v-for="item of swiperList"
+        :key="item.id"
+      >
+        <img
+          class="img"
+          :src="item.imgUrl"
+        >
+      </swiper-slide>
+      <div
+        class="swiper-pagination"
+        slot="pagination"
+      />
     </swiper>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'HomeSwiper',
   // 子组件的data必须是个函数
