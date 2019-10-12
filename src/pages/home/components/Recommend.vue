@@ -24,9 +24,11 @@
           >
             {{ item.desc }}
           </p>
-          <button class="item-button">
-            查看详情
-          </button>
+          <router-link to="/city">
+            <button class="item-button">
+              查看详情
+            </button>
+          </router-link>
         </div>
       </li>
     </ul>
